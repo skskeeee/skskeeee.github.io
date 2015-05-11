@@ -1,0 +1,27 @@
+#room_content h2{
+	margin: 0 auto;
+	margin-top: 120px;
+	width: 282px;
+	height: 50px;
+}
+#room_border{
+	width: 1114px;
+	margin: 0 auto;
+	margin-top: -25px;
+	border-bottom: 1px solid #8e1010;
+}
+#room_content p img{
+	display: block;
+	margin: 70px auto 50px;
+	width: 308px;
+	height: 16px;
+}
+#room_pic_1{
+	float: left;
+	margin-left: 30px;
+	margin-right: 9px;
+}
+#room_pic_2 img{
+	float:left;
+	margin: 0 9px 9px 0;
+}

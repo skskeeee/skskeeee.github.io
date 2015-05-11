@@ -3,40 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>東京ベイサイドホテル</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="room.css">
 </head>
-<body bgcolor="#ddd">
 
 	<header>
-		<ul>
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">facebook</a></li>
-			<li><a href="#">よくあるご質問</a></li>
-			<li><a href="#">お問い合わせ</a></li>
-			<li><a href="#">Language</a></li>
-		</ul>
-
-		<h1><img src="./image/logo.png" alt="東京ベイサイドホテル" /></h1>
-
-		<nav>
-			<ul>
-				<li><a href="#">ご宿泊</a></li>
-				<li><a href="#">バーラウンジ</a></li>
-				<li><a href="#">レストラン</a></li>
-				<li><a href="#">フォトギャラリー</a></li>
-				<li><a href="#">アクセス</a></li>
-			</ul>
-		</nav>
+		<div id="topbar_bg" class="full">
+			<div id=topbar class="container">
+				<ul>
+					<li><a href="#"><img src="./image/twitter.png" alt="twitter" /></a></li>
+					<li><a href="#"><img src="./image/facebook.png" alt="facebook" /></a></li>
+					<li><a href="#"><img src="./image/q_and_a.png" alt="よくあるご質問" /></a></li>
+					<li><a href="#"><img src="./image/contact.png" alt="お問い合わせ" /></a></li>
+					<li><a href="#"><img src="./image/language.png" alt="Language" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="nav_bg" class="full">
+			<section class="container">
+					<h1><a href="index.html"><img src="./image/logo.png" alt="東京ベイサイドホテル" /></a></h1>
+					<nav>
+						<ul>
+							<li><a href="#"><img src="./image/rooms.png" alt="ご宿泊" /></a></li>
+							<li><a href="#"><img src="./image/bar.png" alt="バーラウンジ" /></a></li>
+							<li><a href="#"><img src="./image/restaurant.png" alt="レストラン" /></a></li>
+							<li><a href="#"><img src="./image/gallery.png" alt="フォトギャラリー" /></a></li>
+							<li><a href="#"><img src="./image/access.png" alt="アクセス" /></a></li>
+						</ul>
+					</nav>
+					<div id="nav_bg_2"></div>
+			</section>
+		</div>
 	</header>
 
 
-	<section>
+	<section id="room_content" class="container">
 		<h2><img src="./image/suiteroom.png" alt="スイートルーム" /></h2>
+		<div id="room_border"></div>
 		<p><img src="./image/room_copy.png" alt="あなたをもてなす夜が、ここにも。" /></p>
 
-		<div>
+		<div id="room_pic_1">
 			<img src="./image/room_image_1.jpg" alt="部屋写真" />
 		</div>
-		<div>
+		<div id="room_pic_2">
 			<img src="./image/room_image_2.jpg" alt="部屋写真" />
 			<img src="./image/room_image_3.jpg" alt="部屋写真" />
 			<img src="./image/room_image_4.jpg" alt="部屋写真" />
@@ -154,32 +163,41 @@
 
 
 
-	<footer>
-		<img src="./image/logo_2.png" alt="logo" />
-		<h2>東京ベイサイドホテル</h2>
-		<p>〒135-0063　東京都江東区有明3-1-15　TEL：03-6700-0001(代表)　FAX：03-6700-0007</p>
-		<nav>
-			<ul>
-				<li><a href="#">ご宿泊</a></li>
-				<li><a href="#">バーラウンジ</a></li>
-				<li><a href="#">レストラン</a></li>
-				<li><a href="#">フォトギャラリー</a></li>
-				<li><a href="#">アクセス</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">よくあるご質問</a></li>
-				<li><a href="#">お問い合わせ</a></li>
-				<li><a href="#">Language</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">空室検索</a></li>
-				<li><a href="#">新着情報</a></li>
-				<li><a href="#">おすすめプラン</a></li>
-			</ul>
-		</nav>
-		<small>Copyright(c) RESORTTRUST All rights reserved.</small>
+	<footer class="full">
+		<div class="container">
+			<div id="footer_bg"></div>
+		</div>
+		<section>
+			<div class="container">
+				<div id="footer_info">
+					<img src="./image/logo_2.png" alt="logo" />
+					<h2>東京ベイサイドホテル</h2>
+					<p>〒135-0063　東京都江東区有明3-1-15　TEL：03-6700-0001(代表)　FAX：03-6700-0007</p>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">ご宿泊</a></li>
+						<li><a href="#">バーラウンジ</a></li>
+						<li><a href="#">レストラン</a></li>
+						<li><a href="#">フォトギャラリー</a></li>
+						<li><a href="#">アクセス</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">よくあるご質問</a></li>
+						<li><a href="#">お問い合わせ</a></li>
+						<li><a href="#">Language</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">空室検索</a></li>
+						<li><a href="#">新着情報</a></li>
+						<li><a href="#">おすすめプラン</a></li>
+					</ul>
+				</nav>
+				<small>Copyright(c) RESORTTRUST All rights reserved.</small>
+			</div>
+		</section>
 	</footer>
 
 
