@@ -79,7 +79,6 @@ header nav li a:after{
 	margin: 0 auto;
 	border-bottom: 1px solid rgba(142,16,16,0);
 	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
