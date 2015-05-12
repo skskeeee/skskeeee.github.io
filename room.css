@@ -71,7 +71,8 @@ td{
 }
 
 .room_amenity{
-	height: 500px;
+	clear: both;
+	overflow: hidden;
 }
 .room_amenity h2{
 	margin: 0 auto;
@@ -87,7 +88,7 @@ td{
 	border-bottom: 1px solid #ccc;
 }
 .room_amenity_2{
-	margin: 0 30px 100px;
+	margin: 0 30px 80px;
 	width: 770px;
 	float: left;
 }
@@ -122,19 +123,19 @@ td{
 
 
 .otherrooms{
-	height: 480px;
 	margin-bottom: 200px;
+	clear: both;
+	overflow: hidden;
 }
 .otherrooms h2{
 	margin: 0 auto;
-	margin-top: 60px;
 	width: 282px;
 	height: 50px;
 }
 .otherrooms_border{
 	width: 1114px;
 	margin: 0 auto;
-	margin-top: -32px;
+	margin-top: -50px;
 	margin-bottom: 100px;
 	border-bottom: 1px solid #ccc;
 }
