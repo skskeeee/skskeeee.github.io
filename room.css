@@ -115,10 +115,14 @@ td{
 .room_amenity_2 section p{
 	padding-right: 30px;
 }
+.room_amenity_amenity ul{
+	margin: 0;
+}
 .room_amenity_amenity li span{
 	color: #8e1010;
 	line-height: 38px;
 }
+
 
 
 
