@@ -1,27 +1,149 @@
-#room_content h2{
+
+.room_content h2{
 	margin: 0 auto;
 	margin-top: 120px;
 	width: 282px;
 	height: 50px;
 }
-#room_border{
+.room_border{
 	width: 1114px;
 	margin: 0 auto;
 	margin-top: -25px;
 	border-bottom: 1px solid #8e1010;
 }
-#room_content p img{
+.room_content p img{
 	display: block;
 	margin: 70px auto 50px;
 	width: 308px;
 	height: 16px;
 }
-#room_pic_1{
+.room_pic_1{
 	float: left;
-	margin-left: 30px;
-	margin-right: 9px;
+	margin: 0 9px 0 30px;
 }
-#room_pic_2 img{
+.room_pic_2 img{
 	float:left;
 	margin: 0 9px 9px 0;
+}
+.room_pic_2 img:last-child{
+	float: none;
+	margin: 0;
+}
+
+.room_content_text{
+	margin-left: 46px;
+	height: 400px;
+}
+.room_content_text p{
+	margin: 35px 0 40px;
+	width: 506px;
+	line-height: 24px;
+}
+.room_content_text_2{
+	float: left;
+}
+
+table{
+	width: 378px;
+	float: right;
+	margin: 20px 30px 0 0;
+	line-height: 48px;
+	border-top: 1px solid #8e1010;
+	border-bottom: 1px solid #8e1010;
+}
+.table_border{
+	border-bottom: 1px solid #ccc;
+}
+th{
+	width: 60px;
+	display: block;
+	font-weight:normal;
+	padding: 0;
+	margin: 0 70px 0 10px;
+}
+td{
+	margin: 0;
+	padding-right: 16px;
+}
+.td_text{
+	line-height: 24px;
+	padding: 12px 0 15px;
+}
+
+.room_amenity{
+	height: 500px;
+}
+.room_amenity h2{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 282px;
+	height: 50px;
+}
+.amenity_border{
+	width: 654px;
+	margin: 0 auto;
+	margin-top: -25px;
+	margin-bottom: 80px;
+	border-bottom: 1px solid #ccc;
+}
+.room_amenity_2{
+	margin: 0 30px 100px;
+	width: 770px;
+	float: left;
+}
+.room_amenity h3{
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+.room_amenity_2 section{
+	height: 138px;
+	width: 360px;
+	float: left;
+	margin-bottom: 48px;
+	margin-right: 24px;
+}
+
+.room_amenity_2 section img{
+	float: left;
+	width: 138px;
+	height: 138px;
+	margin-right: 20px;
+}
+
+.room_amenity_2 section p{
+	padding-right: 30px;
+}
+.room_amenity_amenity li span{
+	color: #8e1010;
+	line-height: 38px;
+}
+
+
+
+.otherrooms{
+	height: 480px;
+	margin-bottom: 200px;
+}
+.otherrooms h2{
+	margin: 0 auto;
+	margin-top: 60px;
+	width: 282px;
+	height: 50px;
+}
+.otherrooms_border{
+	width: 1114px;
+	margin: 0 auto;
+	margin-top: -32px;
+	margin-bottom: 100px;
+	border-bottom: 1px solid #ccc;
+}
+.otherrooms ul{
+	width: 1114px;
+	margin: 0;
+	padding: 0;
+}
+.otherrooms ul li{
+	float: left;
+	list-style: none;
 }

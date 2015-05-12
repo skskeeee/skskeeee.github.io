@@ -9,7 +9,6 @@ body {
 	background-color:#fff;
 	text-align:left;
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
 }
 h1,h2,h3,p{
 	margin: 0;
@@ -25,43 +24,36 @@ li{
 	min-width: 1114px;
 }
 header{
-	width: 100%;
 	height: 130px;
 	background: #fff;
 }
-#topbar_bg{
+.topbar{
 	background-color: #8e1010;
 	height: 50px;
 	width: 100%;
 }
-#topbar{
-	height: 50px;
-	margin: 0 auto;
-}
-
-#topbar ul{
+.topbar ul{
 	float:right;
 	margin: 0 auto;
 }
-#topbar li{
+.topbar li{
 	height: 50px;
 	float:left;
 	margin-right:30px;
 }
-#topbar li:hover{
+.topbar li:hover{
 	opacity: 0.7;
 }
-#nav_bg{
+.g_nav{
 	position: absolute;
 	width: 100%;
 	height: 97px;
-	overflow: hidden;
 }
-#nav_bg_2{
+.g_nav_bg{
 	height: 97px;
-	width: 1814px;
+	width: 100%;
 	margin: 0 auto;
-	margin-left: -350px;
+	background-position: 50% 0;
 	background-image: url(./image/nav_bg.png);
 	background-repeat: no-repeat;
 }
@@ -76,13 +68,9 @@ header h1{
 	float:left;
 	margin: 20px 92px 0 46px;
 }
-
 header nav li{
 	margin-top: 15px;
 	float:left;
-}
-header nav li a{
-	display: block;
 }
 header nav li a:after{
 	content:"";
@@ -98,14 +86,13 @@ header nav li a:after{
 header nav li a:hover:after{
 	border-bottom: 1px solid rgba(142,16,16,1);
 }
-#mainimage{
-	background-image: url(./image/main_image.jpg);
-	background-repeat: no-repeat;
+.mainimage{
+	background: url(./image/main_image.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 569px;
 }
-#mainimage img{
+.mainimage img{
 	margin-top: 270px;
 	margin-left: 22px;
 }
@@ -146,53 +133,42 @@ select {
 }
 
 
-#hotel_info{
-	margin-top: 110px;
-	color: #666;
+.hotel_info{
+	margin: 110px auto 150px;
 	height: 190px;
-	margin-bottom: 150px;
 }
-#welcome{
-	width: 470px;
-	margin-left: 46px;
+.hotel_info section{
+	width: 460px;
+	margin: 0 46px;
+}
+.hotel_info_welcome,.hotel_info_new h2{
 	float:left;
 }
-#welcome p{
+.hotel_info_welcome p{
 	line-height: 28px;
 	margin-top: 27px;
 }
-
-#info{
-	margin-right: 50px;
-	display: block;
-	float: right;
-	width: 460px;
-}
-#info h2{
-	float: left;
-}
-#info a img{
-	display: block;
+.hotel_info_new,.hotel_info_new a img{
 	float: right;
 }
-#info a img:hover{
+.hotel_info_new a img:hover{
 	opacity: 0.7;
 }
-#info ul{
+.hotel_info_new ul{
 	float: left;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 21px;
 }
-#info a{
+.hotel_info_new a{
 	color: #8e1010;
 	line-height: 38px;
 	text-decoration: none;
 }
-#info a span{
+.hotel_info_new a span{
 	font-size: 15px;
 	color: #666;
 }
-#info a:hover{
+.hotel_info_new a:hover{
 	color: #cf4343;
 }
 
@@ -211,77 +187,59 @@ select {
 .osusume_link:hover{
 	background-color: #480909;
 }
-#osusume_1{
-	height: 370px;
-	border-bottom: 1px solid #8e1010;
+.osusume_1,.osusume_2{
+	height: 350px;
+	line-height: 24px;
 }
-#osusume_1:after{
+.osusume_1 h2,.osusume_2 h2{
+	height: 44px;
+	padding-top: 20px;
+	margin: 20px 0 36px;
+}
+.osusume_1{
+	border-bottom: 1px solid #8e1010;
+	padding: 0 46px 20px 0;
+}
+.osusume_1:before{
 	content: "";
-	background-image: url(./image/osusume_1_image.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background: url(./image/osusume_1_image.jpg) no-repeat;
 	width: 608px;
 	height: 340px;
 	float: left;
+	margin-right: 36px;
 }
-#osusume_1_text{
-	width: 420px;
-	float: right;
-	margin-right: 50px;
-	line-height: 24px;
+.osusume_2{
+	margin: 30px 0 160px 46px;
 }
-#osusume_1 h2,#osusume_2 h2{
-	height: 44px;
-	margin: 20px 0 36px;
-}
-#osusume_2{
-	height: 350px;
-	margin-top: 30px;
-	margin-bottom: 200px;
-}
-#osusume_2:before{
+.osusume_2:before{
 	content: "";
-	background-image: url(./image/osusume_2_image.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background: url(./image/osusume_2_image.jpg) no-repeat;
 	width: 506px;
 	height: 340px;
 	float: right;
+	margin-left: 36px;
 }
-#osusume_2_text{
-	width: 520px;
-	float: left;
-	margin-left: 50px;
-	line-height: 24px;
-}
-footer{
-	overflow: hidden;
-}
+
+
+
+
 footer section{
 	background: #8e1010;
-	height: 150px;
+	height: 155px;
 }
-footer,footer a,footer h2{
+footer,footer a{
 	color: #fff;
 	text-decoration: none;
 	font-size: 12px;
 	font-weight: normal;
 }
-#footer_info{
+.footer_info{
 	float: left;
 	margin-left: 10px;
+	margin-right: 100px;
 }
-#footer_info img{
-	margin: 55px 0 20px;
-	display: block;
-}
-footer nav{
-	display: block;
-	float: right;
-	margin-right: 140px;
-	height: 100px;
+.footer_info img{
+	margin: 57px 0 10px;
 }
 footer nav ul{
 	float: left;
@@ -298,14 +256,13 @@ footer small{
 	float: right;
 	font-size: 12px;
 	margin-right: 10px;
-	margin-top: 12px;
+	margin-top: 10px;
 }
 
-#footer_bg{
+.footer_bg{
 	height: 36px;
 	margin: 0 auto;
-	width: 1814px;
-	margin-left: -350px;
+	background-position: 50% 0;
 	background-image: url(./image/footer_bg.png);
 	background-repeat: no-repeat;
 }
