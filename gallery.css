@@ -13,6 +13,14 @@
 	top:0;
 	width: 100%;
 }
+.photo_gallery p{
+	position: absolute;
+	margin: -40px 0 0 18px;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-shadow: 0 0 6px rgba(0,0,0,0.8)
+}
 .tmb{
 	float: right;
 	width: 386px;
@@ -41,5 +49,4 @@
 }
 .tmb ul li.current img{
 	opacity: 1;
-	filter: alpha(opacity=100);
 }
