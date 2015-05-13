@@ -48,14 +48,13 @@ table{
 	margin: 20px 30px 80px 0;
 	line-height: 48px;
 	border-top: 1px solid #8e1010;
-	border-bottom: 1px solid #8e1010;
 	border-collapse: collapse;
 }
 tr{
 	border-bottom: 1px solid #ccc;
 }
 tr:last-child{
-	border: 0;
+	border-bottom: 1px solid #8e1010;
 }
 th{
 	width: 60px;
@@ -124,7 +123,6 @@ th{
 }
 .otherrooms ul li{
 	float: left;
-	list-style: none;
 	-webkit-filter:saturate(65%);
 	-moz-filter:saturate(65%);
 	filter:saturate(65%);
