@@ -5,12 +5,14 @@
 	border-bottom: 1px solid #ccc;
 }
 
-
-.room_content h2{
+.room_content h2,.amenity h2,.otherrooms h2{
 	margin: 0 auto;
-	margin-top: 120px;
 	width: 282px;
 	height: 50px;
+}
+
+.room_content h2{
+	margin-top: 120px;
 }
 .room_border{
 	border-color: #8e1010;
@@ -21,33 +23,13 @@
 	width: 308px;
 	height: 16px;
 }
-/*
-.room_pic_1{
-	float: left;
-	margin: 0 9px 0 30px;
-}
-.room_pic_2 img{
-	float:left;
-	margin: 0 9px 9px 0;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.room_pic_2 img:last-child{
-	float: none;
-	margin: 0;
-}
-.room_pic_2 img:hover{
-	opacity: 0.5;
-}
-*/
 
 .room_content_text{
 	margin-left: 46px;
 	height: 400px;
 }
 .room_content_text p{
-	margin: 42px 0;
+	margin: 40px 0;
 	width: 506px;
 	line-height: 24px;
 }
@@ -63,36 +45,35 @@
 table{
 	width: 378px;
 	float: right;
-	margin: 20px 30px 0 0;
+	margin: 20px 30px 80px 0;
 	line-height: 48px;
 	border-top: 1px solid #8e1010;
 	border-bottom: 1px solid #8e1010;
+	border-collapse: collapse;
 }
-.table_border{
+tr{
 	border-bottom: 1px solid #ccc;
+}
+tr:last-child{
+	border: 0;
 }
 th{
 	width: 60px;
+	padding: 0 70px 0 10px;
 	display: block;
+	color: #999;
 	font-weight:normal;
-	padding: 0;
-	margin: 0 70px 0 10px;
 }
 .td_text{
 	line-height: 24px;
-	padding: 12px 0 15px;
+	padding: 12px 10px 15px 0;
 }
 
 
 .amenity{
 	clear: both;
 	overflow: hidden;
-}
-.amenity h2{
-	margin: 0 auto;
-	margin-top: 80px;
-	width: 282px;
-	height: 50px;
+	margin-bottom: 80px;
 }
 .amenity_border{
 	width: 654px;
@@ -104,16 +85,15 @@ th{
 	margin-bottom: 6px;
 }
 .amenity_service{
-	margin: 0 30px 80px;
+	margin: 0 30px;
 	width: 770px;
 	float: left;
 }
 .amenity_service section{
 	height: 138px;
-	width: 360px;
+	width: 384px;
 	float: left;
 	margin-bottom: 48px;
-	margin-right: 24px;
 }
 .amenity_service section img{
 	float: left;
@@ -122,12 +102,9 @@ th{
 	margin-right: 20px;
 }
 .amenity_service section p{
-	padding-right: 30px;
+	padding-right: 54px;
 }
 
-.amenity_amenity ul{
-	margin: 0;
-}
 .amenity_amenity li span{
 	color: #8e1010;
 	line-height: 38px;
@@ -141,19 +118,9 @@ th{
 	clear: both;
 	overflow: hidden;
 }
-.otherrooms h2{
-	margin: 0 auto;
-	width: 282px;
-	height: 50px;
-}
 .otherrooms_border{
 	margin-top: -50px;
 	margin-bottom: 100px;
-}
-.otherrooms ul{
-	width: 1114px;
-	margin: 0;
-	padding: 0;
 }
 .otherrooms ul li{
 	float: left;

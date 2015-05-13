@@ -13,6 +13,10 @@ body {
 h1,h2,h3,p{
 	margin: 0;
 }
+ul,th,td{
+	margin: 0;
+	padding: 0;
+}
 li{
 	list-style: none;
 }
@@ -58,15 +62,12 @@ header{
 	background-repeat: no-repeat;
 }
 
-header nav ul{
-	background: #fff;
-	margin: 0 auto;
-}
+
 header h1{
 	width: 368px;
 	height: 42px;
 	float:left;
-	margin: 20px 92px 0 46px;
+	margin: 19px 92px 0 46px;
 }
 header nav li{
 	margin-top: 15px;
@@ -167,7 +168,6 @@ select {
 }
 .hotel_info_new ul{
 	float: left;
-	padding: 0;
 	margin-top: 21px;
 }
 .hotel_info_new a{
@@ -251,7 +251,7 @@ footer,footer a{
 }
 footer nav ul{
 	float: left;
-	margin: 0;
+	padding-left: 40px;
 }
 footer li{
 	list-style: disc;

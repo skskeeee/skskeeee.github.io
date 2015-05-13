@@ -29,8 +29,6 @@
 .tmb ul{
 	overflow: hidden;
 	width: 100%;
-	margin: 0;
-	padding: 0;
 }
 .tmb ul li{
 	float: left;
@@ -44,9 +42,6 @@
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.tmb ul li img:hover{
-	opacity: 1;
-}
-.tmb ul li.current img{
+.tmb ul li img:hover,.tmb ul li.current img{
 	opacity: 1;
 }
