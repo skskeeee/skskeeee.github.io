@@ -184,7 +184,9 @@ select {
 	float: right;
 }
 .osusume_link:hover{
-	background-color: #480909;
+	-webkit-filter:brightness(125%);
+	-moz-filter:brightness(125%);
+	filter:brightness(125%);
 }
 .osusume_1,.osusume_2{
 	height: 350px;

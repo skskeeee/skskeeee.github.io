@@ -21,6 +21,7 @@
 	width: 308px;
 	height: 16px;
 }
+/*
 .room_pic_1{
 	float: left;
 	margin: 0 9px 0 30px;
@@ -39,7 +40,7 @@
 .room_pic_2 img:hover{
 	opacity: 0.5;
 }
-
+*/
 
 .room_content_text{
 	margin-left: 46px;

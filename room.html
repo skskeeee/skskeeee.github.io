@@ -5,6 +5,69 @@
 	<title>東京ベイサイドホテル</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="room.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+
+	    var options = {
+	        thumbMaxWidth : 184,
+	        thumbMinWidth : 65,
+	        fade : 500
+	    };
+
+	    $(function(){
+			var thumbList = $('.thumbnail').find('a'),
+	            mainPhoto = $('.photo_gallery_main'),
+	            img = $('<img />'),
+	            imgHeight;
+
+	        $('.photo_gallery').css('maxWidth', options.maxWidth);
+
+	        var liWidth = Math.floor((options.thumbMaxWidth / options.maxWidth) * 100);
+	        $('.thumbnail li').css({
+	            width : liWidth + '%',
+	            maxWidth : options.thumbMaxWidth,
+	            minWidth : options.thumbMinWidth
+	        });
+
+	        img = img.attr({
+	                src: $(thumbList[0]).attr('href'),
+	                alt: $(thumbList[0]).find('img').attr('alt')
+	        });
+	        mainPhoto.append(img);
+			$('.thumbnail li:first').addClass('current');
+
+	        for(var i = 0; i < thumbList.length; i++){
+				$('<img />').attr({
+	                src: $(thumbList[i]).attr('href'),
+	                alt: $(thumbList[i]).find('img').attr('alt')
+	            });
+			}
+
+			thumbList.on('click', function(){
+	            var photo = $('<img />').attr({
+	                src: $(this).attr('href'),
+	                alt: $(this).find('img').attr('alt')
+	            });
+
+	            mainPhoto.find('img').before(photo);
+	            mainPhoto.find('img:not(:first)').stop(true, true).fadeOut(options.fade, function(){
+			        $(this).remove();
+			    });
+
+	            $(this).parent().addClass('current').siblings().removeClass('current');
+	            return false;
+			});
+
+	        $(window).on('resize load', function(){
+	            mainPhoto.height(mainPhoto.find('img').outerHeight());
+	        });
+		});
+	</script>
+
+
 </head>
 <body>
 
@@ -43,17 +106,47 @@
 		<div class="room_border border"></div>
 		<p><img src="./image/room_copy.png" alt="あなたをもてなす夜が、ここにも。" /></p>
 
-		<div class="room_pic_1">
-			<img src="./image/room_image_1.jpg" alt="部屋写真" />
-		</div>
-		<div class="room_pic_2">
-			<img src="./image/room_image_2.jpg" alt="部屋写真" />
-			<img src="./image/room_image_3.jpg" alt="部屋写真" />
-			<img src="./image/room_image_4.jpg" alt="部屋写真" />
-			<img src="./image/room_image_5.jpg" alt="部屋写真" />
-			<img src="./image/room_image_6.jpg" alt="部屋写真" />
-			<img src="./image/room_image_7.jpg" alt="部屋写真" />
-		</div>
+
+
+	<div class="photo_gallery">
+		<div class="photo_gallery_main"></div>
+	</div>
+	<div class="tmb">
+		<ul class="thumbnail">
+			<li>
+				<a href="./image/room_img_1.jpg"><img src="./image/room_img_1_tmb.jpg" alt="photo1" /></a>
+			</li>
+			<li>
+				<a href="./image/room_img_2.jpg"><img src="./image/room_img_2_tmb.jpg" alt="photo1" /></a>
+			</li>
+			<li>
+				<a href="./image/room_img_3.jpg"><img src="./image/room_img_3_tmb.jpg" alt="photo1" /></a>
+			</li>
+			<li>
+				<a href="./image/room_img_4.jpg"><img src="./image/room_img_4_tmb.jpg" alt="photo1" /></a>
+			</li>
+			<li>
+				<a href="./image/room_img_5.jpg"><img src="./image/room_img_5_tmb.jpg" alt="photo1" /></a>
+			</li>
+			<li>
+				<a href="./image/room_img_6.jpg"><img src="./image/room_img_6_tmb.jpg" alt="photo1" /></a>
+			</li>
+		</ul>
+	</div>
+
+
+
+<!-- <div class="room_pic_1">
+	<img src="./image/room_image_1.jpg" alt="部屋写真" />
+</div>
+<div class="room_pic_2">
+	<img src="./image/room_image_2.jpg" alt="部屋写真" />
+	<img src="./image/room_image_3.jpg" alt="部屋写真" />
+	<img src="./image/room_image_4.jpg" alt="部屋写真" />
+	<img src="./image/room_image_5.jpg" alt="部屋写真" />
+	<img src="./image/room_image_6.jpg" alt="部屋写真" />
+	<img src="./image/room_image_7.jpg" alt="部屋写真" />
+</div>  -->
 
 		<div class="room_content_text">
 			<div class="room_content_text_2">
