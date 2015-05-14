@@ -162,19 +162,19 @@ th{
 	z-index: 100;
 }
 .price_1 span:after{
-	content: "-¥22,000";
+	content: "-¥24,000";
 }
 .price_2 span:after{
-	content: "-¥27,000";
+	content: "-¥39,800";
 }
 .price_3 span:after{
 	content: "-¥31,000";
 }
 .price_4 span:after{
-	content: "-¥55,000";
+	content: "-¥57,800";
 }
 .price_5 span:after{
-	content: "-¥41,000";
+	content: "-¥41,800";
 }
 .otherrooms ul li:hover span{
 	-moz-transform: scale(1);
