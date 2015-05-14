@@ -1,17 +1,17 @@
 .photo_gallery{
-	float: left;
 	width: 666px;
+	float: left;
 	margin: 0 9px 0 30px;
 }
 .photo_gallery_main{
-	position: relative;
-	height: 362px;
 	width: 666px;
+	height: 362px;
+	position: relative;
 }
 .photo_gallery_main img{
+	width: 100%;
 	position: absolute;
 	top:0;
-	width: 100%;
 }
 .photo_gallery p{
 	position: absolute;
@@ -22,17 +22,17 @@
 	text-shadow: 0 0 6px rgba(0,0,0,0.8)
 }
 .tmb{
-	float: right;
 	width: 386px;
+	float: right;
 	margin-right: 23px;
 }
 .tmb ul{
-	overflow: hidden;
 	width: 100%;
+	overflow: hidden;
 }
 .tmb ul li{
-	float: left;
 	height: 114px;
+	float: left;
 	margin: 0 9px 9px 0;
 }
 .tmb ul li img{

@@ -21,8 +21,8 @@ li{
 	list-style: none;
 }
 .container{
-	margin: 0 auto;
 	width: 1114px;
+	margin: 0 auto;
 }
 .full{
 	min-width: 1114px;
@@ -33,8 +33,8 @@ header{
 }
 .topbar{
 	background-color: #8e1010;
-	height: 50px;
 	width: 100%;
+	height: 50px;
 }
 .topbar ul{
 	float:right;
@@ -50,18 +50,18 @@ header{
 }
 
 .topbar ul li ul {
+	width: 85px;
 	position: absolute;
 	top: 50px;
-	width: 85px;
 	margin-left: -10px;
 	z-index: 200;
 }
 .topbar ul li ul li{
+	width: 85px;
+	height: 0;
 	visibility: hidden;
 	overflow: hidden;
 	text-align: center;
-	width: 85px;
-	height: 0;
 	background:#8e1010;
 }
 .topbar ul li ul li a{
@@ -86,14 +86,14 @@ header{
 }
 
 .g_nav{
+	width: 100%;
+	height: 97px;
 	position: absolute;
 	z-index: 100;
-	width: 100%;
-	height: 97px;
 }
 .g_nav_bg{
-	height: 97px;
 	width: 100%;
+	height: 97px;
 	margin: 0 auto;
 	background-position: 50% 0;
 	background-image: url(./image/nav_bg.png);
@@ -143,7 +143,7 @@ select {
 	border-radius: 8px;
 	padding: 13px 26px 13px 22px;
 	border: none;
-	background: #640c0c;
+	background-color: #640c0c;
 	background-image: url(./image/allow.png);
 	background-repeat: no-repeat;
 	background-position: right;
@@ -155,20 +155,18 @@ select {
 	height: 122px;
 	display:block;
 	border-radius: 30px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
 	background-color: #480909;
 	margin-top: -60px;
 	z-index: 100;
 	position: relative;
 }
 #form dl,dt,dd{
-	float: left;
 	margin: 20px 5px 0;
+	float: left;
 }
 .formtitle{
-	margin-left: 35px;
 	margin-top: 35px;
+	margin-left: 35px;
 }
 #form div img{
 	margin-top: 40px;
@@ -177,8 +175,8 @@ select {
 
 
 .hotel_info{
-	margin: 110px auto 150px;
 	height: 190px;
+	margin: 110px auto 150px;
 }
 .hotel_info section{
 	width: 460px;
@@ -216,9 +214,9 @@ select {
 
 
 .osusume_link{
-	display: block;
 	width: 175px;
 	height: 40px;
+	display: block;
 	background-color: #8e1010;
 	border-radius: 10px;
 	text-align: center;
@@ -274,8 +272,7 @@ footer,footer a{
 }
 .footer_info{
 	float: left;
-	margin-left: 10px;
-	margin-right: 100px;
+	margin: 0 100px 0 10px;
 }
 .footer_info img{
 	margin: 57px 0 10px;

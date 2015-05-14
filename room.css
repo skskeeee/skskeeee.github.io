@@ -1,14 +1,13 @@
 .border{
 	width: 1114px;
-	margin: 0 auto;
-	margin-top: -25px;
+	margin: -25px auto 0;
 	border-bottom: 1px solid #ccc;
 }
 
 .room_content h2,.amenity h2,.otherrooms h2{
-	margin: 0 auto;
 	width: 282px;
 	height: 50px;
+	margin: 0 auto;
 }
 
 .room_content h2{
@@ -18,19 +17,19 @@
 	border-color: #8e1010;
 }
 .room_content p img{
-	display: block;
-	margin: 70px auto 50px;
 	width: 308px;
 	height: 16px;
+	display: block;
+	margin: 70px auto 50px;
 }
 
 .room_content_text{
-	margin-left: 46px;
 	height: 400px;
+	margin-left: 46px;
 }
 .room_content_text p{
-	margin: 40px 0;
 	width: 506px;
+	margin: 40px 0;
 	line-height: 24px;
 }
 .room_content_text_2{
@@ -84,20 +83,20 @@ th{
 	margin-bottom: 6px;
 }
 .amenity_service{
-	margin: 0 30px;
 	width: 770px;
+	margin: 0 30px;
 	float: left;
 }
 .amenity_service section{
-	height: 138px;
 	width: 384px;
+	height: 138px;
 	float: left;
 	margin-bottom: 48px;
 }
 .amenity_service section img{
-	float: left;
 	width: 138px;
 	height: 138px;
+	float: left;
 	margin-right: 20px;
 }
 .amenity_service section p{
@@ -130,10 +129,10 @@ th{
 	float: left;
 }
 .otherrooms ul li p{
+	width: 223px;
+	height: 355px;
 	overflow: hidden;
 	display: block;
-	height: 355px;
-	width: 223px;
 	position: absolute;
 }
 .otherrooms ul li p span{
