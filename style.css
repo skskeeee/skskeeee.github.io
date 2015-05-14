@@ -45,11 +45,49 @@ header{
 	float:left;
 	margin-right:30px;
 }
-.topbar li:hover{
+.topbar ul li img:hover{
 	opacity: 0.7;
 }
+
+.topbar ul li ul {
+	position: absolute;
+	top: 50px;
+	width: 85px;
+	margin-left: -10px;
+	z-index: 200;
+}
+.topbar ul li ul li{
+	visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	width: 85px;
+	height: 0;
+	background:#8e1010;
+}
+.topbar ul li ul li a{
+	display: block;
+	line-height: 40px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+.topbar ul li ul li:hover, .topbar ul li ul li a:hover {
+	background:#480909;
+}
+.topbar ul li:hover ul li, .topbar ul li a:hover ul li{
+	visibility: visible;
+	overflow: visible;
+	height: 40px;
+}
+.topbar *{
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 .g_nav{
 	position: absolute;
+	z-index: 100;
 	width: 100%;
 	height: 97px;
 }
@@ -86,8 +124,8 @@ header nav li a:after{
 header nav li a:hover:after{
 	border-bottom: 1px solid rgba(142,16,16,1);
 }
-.mainimage{
-	background-image: url(./image/main_image.jpg);
+/*.mainimage{
+	background-image: url(./image/main_image_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -96,7 +134,7 @@ header nav li a:hover:after{
 .mainimage img{
 	margin-top: 184px;
 	margin-left: 12px;
-}
+}*/
 
 
 header h1:hover,select:hover,#form div img:hover,.osusume_link:hover{
@@ -108,13 +146,13 @@ header h1:hover,select:hover,#form div img:hover,.osusume_link:hover{
 
 
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 8px;
-  padding: 13px 26px 13px 22px;
-  border: none;
-  background: #640c0c;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 8px;
+	padding: 13px 26px 13px 22px;
+	border: none;
+	background: #640c0c;
 	background-image: url(./image/allow.png);
 	background-repeat: no-repeat;
 	background-position: right;
@@ -130,9 +168,11 @@ select {
 	-moz-border-radius: 30px;
 	background-color: #480909;
 	margin-top: -60px;
+	z-index: 100;
+	position: relative;
 }
 #form dl,dt,dd{
-	float:left;
+	float: left;
 	margin: 20px 5px 0;
 }
 .formtitle{
