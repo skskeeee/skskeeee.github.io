@@ -117,21 +117,68 @@ th{
 	clear: both;
 	overflow: hidden;
 }
-.otherrooms_border{
-	margin-top: -50px;
-	margin-bottom: 100px;
-}
-.otherrooms ul li{
-	float: left;
-	-webkit-filter:saturate(65%);
-	-moz-filter:saturate(65%);
-	filter:saturate(65%);
+.otherrooms *{
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.otherrooms ul li:hover{
-	-webkit-filter:saturate(100%);
-	-moz-filter:saturate(100%);
-	filter:saturate(100%);
+.otherrooms_border{
+	margin-top: -50px;
+	margin-bottom: 100px;
+}
+.otherrooms ul li a,.otherrooms ul li{
+	float: left;
+}
+.otherrooms ul li p{
+	overflow: hidden;
+	display: block;
+	height: 355px;
+	width: 223px;
+	position: absolute;
+}
+.otherrooms ul li p span{
+	width: 455px;
+	height: 455px;
+	border-radius: 300px;
+	margin-left: -116px;
+	margin-top: -50px;
+	display: block;
+	position: absolute;
+	z-index: 10;
+	background: rgba(72,9,9,0.3);
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+.otherrooms ul li p span:after{
+	font-size: 24px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	color: #fff;
+	text-shadow: 0 0 16px #000,0 0 8px #000;
+	display: block;
+	margin-left: -14px;
+	line-height: 420px;
+	text-align: center;
+	z-index: 100;
+}
+.price_1 span:after{
+	content: "-¥22,000";
+}
+.price_2 span:after{
+	content: "-¥27,000";
+}
+.price_3 span:after{
+	content: "-¥31,000";
+}
+.price_4 span:after{
+	content: "-¥55,000";
+}
+.price_5 span:after{
+	content: "-¥41,000";
+}
+.otherrooms ul li:hover span{
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
