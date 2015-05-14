@@ -124,17 +124,7 @@ header nav li a:after{
 header nav li a:hover:after{
 	border-bottom: 1px solid rgba(142,16,16,1);
 }
-/*.mainimage{
-	background-image: url(./image/main_image_1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 490px;
-}
-.mainimage img{
-	margin-top: 184px;
-	margin-left: 12px;
-}*/
+
 
 
 header h1:hover,select:hover,#form div img:hover,.osusume_link:hover{
@@ -143,7 +133,6 @@ header h1:hover,select:hover,#form div img:hover,.osusume_link:hover{
 	-moz-filter:brightness(125%);
 	filter:brightness(125%);
 }
-
 
 
 
