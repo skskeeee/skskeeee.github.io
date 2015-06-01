@@ -3,14 +3,12 @@
 html{
 	margin:0; padding:0;
 	height: 100%;
-	min-height: 600px;
 	width: 100%;
 	color:#777;
 }
 body {
 	height: 100%;
 	width: 100%;
-	min-width: 1100px;
 	margin: 0 auto;
 	background-color:#f5f5f5;
 	text-align:left;
@@ -29,24 +27,22 @@ li{
 a{
 	text-decoration: none;
 }
-.container{
-	margin: 0 auto;
-}
+
+
+
 header{
-	height: 100%;
-	min-height: 680px;
 	width: 38%;
-	min-width: 400px;
+	min-width: 430px;
+	height: 100%;
 	float: left;
-	position: fixed;
 	background: #fff;
+	position: fixed;
 }
 header section{
 	float: left;
 }
 .g_nav{
 	width: 35%;
-	min-height: 680px;
 }
 .g_nav h1{
 	margin: 40px 0;
@@ -90,9 +86,13 @@ header section{
 	width: 65%;
 	height: 100%;
 	background-color: #1fc99a;
-	position: relative;
 	overflow: hidden;
-
+	float: right;
+	position: relative;
+	background-image: url(./image/gf.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 .shindan_content{
 	position: absolute;
@@ -111,6 +111,7 @@ header section{
 	line-height: 52px;
 	letter-spacing: -3px;
 	color: #fff;
+	text-shadow: 0 0 30px rgba(31, 201, 154, 1);
 }
 .shindan_yesno{
 	width: 260px;
@@ -144,15 +145,17 @@ header section{
 
 .content{
 	width: 62%;
-	min-width: 600px;
 	height: 100%;
-	float: right;
-	position: relative;
+	left: 38%;
+	position: absolute;
+	background-image: url(./image/konpeito_2.png),	url(./image/konpeito_1.png),	url(./image/konpeito_4.png),
+	url(./image/konpeito_4.png),
+	url(./image/konpeito_2.png),
+	url(./image/konpeito_3.png);
+	background-repeat: no-repeat;
+	background-position: -37px -37px,385px -20px,760px 282px,-60px 380px,260px 460px,630px 360px;
 }
 .content_images{
-	margin: 0 auto;
-	width: 600px;
-	height: 100%;
 }
 .content img{
 	position: absolute;
@@ -178,6 +181,16 @@ header section{
 	left: 570px;
 }
 .image_6 img{
-	top: 580px;
+	top: 1580px;
 	left: 210px;
+}
+
+
+@media (max-height:660px){
+	.g_nav nav ul{
+		margin-bottom: 4%;
+	}
+	.g_nav nav li{
+		margin-bottom: 25px;
+	}
 }
