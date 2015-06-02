@@ -32,11 +32,12 @@ a{
 
 header{
 	width: 38%;
-	min-width: 430px;
+	min-width: 380px;
 	height: 100%;
 	float: left;
 	background: #fff;
 	position: fixed;
+	z-index: 100;
 }
 header section{
 	float: left;
@@ -72,7 +73,11 @@ header section{
 	text-align: center;
 	margin-bottom: 50px;
 }
-
+.g_nav nav li img{
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
 .g_nav small{
 	font-size: 10px;
 	color: #888;
@@ -140,26 +145,28 @@ header section{
 	font-weight: 300;
 	background-image: url(./image/yesno.png);
 	background-repeat: no-repeat;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.shindan_yesno li a:hover,.g_nav nav li:hover img{
+	transform: translate(0,-10px);
 }
 
 
 .content{
 	width: 62%;
 	height: 100%;
-	left: 38%;
+	margin-left: 38%;
+	z-index: 1;
 	position: absolute;
-	background-image: url(./image/konpeito_2.png),	url(./image/konpeito_1.png),	url(./image/konpeito_4.png),
-	url(./image/konpeito_4.png),
-	url(./image/konpeito_2.png),
-	url(./image/konpeito_3.png);
-	background-repeat: no-repeat;
-	background-position: -37px -37px,385px -20px,760px 282px,-60px 380px,260px 460px,630px 360px;
+	overflow-x: hidden;
 }
-.content_images{
-}
+
 .content img{
 	position: absolute;
 }
+
 .image_1 img{
 	top: 10px;
 	left: 10px;
@@ -186,11 +193,59 @@ header section{
 }
 
 
+.bg_1 img{
+	top: -37px;
+	left: -37px;
+}
+.bg_2 img{
+	top: -20px;
+	left: 385px;
+}
+.bg_3 img{
+	top: 282px;
+	left: 760px;
+}
+.bg_4 img{
+	top: 380px;
+	left: -60px;
+}
+.bg_5 img{
+	top: 460px;
+	left: 260px;
+}
+.bg_6 img{
+	top: 360px;
+	left: 630px;
+}
+
 @media (max-height:660px){
 	.g_nav nav ul{
 		margin-bottom: 4%;
 	}
 	.g_nav nav li{
 		margin-bottom: 25px;
+	}
+}
+@media (max-width:1080px){
+	.shindan_text{
+		width: 230px;
+	}
+	.shindan_text h2{
+		font-size: 40px;
+	}
+	.shindan_yesno{
+		width: 240px;
+	}
+	.shindan_yesno li{
+		margin-right: 10px;
+	}
+	.content{
+		margin-left: 380px;
+		overflow-x: visible;
+	}
+}
+@media (max-width:1200px){
+	.content{
+		overflow-x: visible;
 	}
 }
