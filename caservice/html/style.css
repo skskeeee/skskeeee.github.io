@@ -14,18 +14,17 @@ body {
 	text-align:left;
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-h1,h2,h3,p{
+h1,h2,h3,p,a{
 	margin: 0;
+	color: #fff;
+	text-decoration: none;
 }
-ul,th,td{
+ul{
 	margin: 0;
 	padding: 0;
 }
 li{
 	list-style: none;
-}
-a{
-	text-decoration: none;
 }
 
 
@@ -34,7 +33,6 @@ header{
 	width: 38%;
 	min-width: 380px;
 	height: 100%;
-	float: left;
 	background: #fff;
 	position: fixed;
 	z-index: 100;
@@ -79,9 +77,9 @@ header section{
 	transition: all 0.3s ease-in-out;
 }
 .g_nav small{
+	width:35%;
 	font-size: 10px;
 	color: #888;
-	width:35%;
 	text-align: center;
 	bottom: 1.5%;
 	position: absolute;
@@ -92,7 +90,6 @@ header section{
 	height: 100%;
 	background-color: #1fc99a;
 	overflow: hidden;
-	float: right;
 	position: relative;
 	background-image: url(./image/gf.png);
 	background-repeat: no-repeat;
@@ -115,7 +112,6 @@ header section{
 	font-size: 48px;
 	line-height: 52px;
 	letter-spacing: -3px;
-	color: #fff;
 	text-shadow: 0 0 30px rgba(31, 201, 154, 1);
 }
 .shindan_yesno{
@@ -135,10 +131,9 @@ header section{
 .shindan_yesno li a{
 	height: 115px;
 	width: 115px;
-	display: block;
 	line-height: 115px;
+	display: block;
 	text-align: center;
-	color: #fff;
 	font-size: 30px;
 	letter-spacing: 3px;
 	font-style: italic;
@@ -162,58 +157,85 @@ header section{
 	position: absolute;
 	overflow-x: hidden;
 }
-
 .content img{
 	position: absolute;
 }
 
-.image_1 img{
+
+.image_1 a,.image_1 a img,.image_1 a:after{
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.image_1 a{
 	top: 10px;
 	left: 10px;
+	position: absolute;
 }
-.image_2 img{
+.image_1 a:after{
+	content: "\30AC\30FC\30EB\30D5\30EC\30F3\30C9\FF08\4EEE\FF09";
+	width: 425px;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	line-height: 425px;
+	position: absolute;
+	z-index: 200;
+	opacity: 0;
+}
+.image_1 a:hover img{
+	filter:brightness(40%);
+	-webkit-filter:brightness(40%);
+	transform: scale(1.04);
+}
+.image_1 a:hover:after{
+	opacity: 1;
+}
+
+
+.image_2{
 	top: 10px;
 	left: 465px;
 }
-.image_3 img{
+.image_3{
 	top: 450px;
 	left: 10px;
 }
-.image_4 img{
+.image_4{
 	top: 340px;
 	left: 380px;
 }
-.image_5 img{
+.image_5{
 	top: 500px;
 	left: 570px;
 }
-.image_6 img{
+.image_6{
 	top: 1580px;
 	left: 210px;
 }
 
 
-.bg_1 img{
+.bg_1{
 	top: -37px;
 	left: -37px;
 }
-.bg_2 img{
+.bg_2{
 	top: -20px;
 	left: 385px;
 }
-.bg_3 img{
+.bg_3{
 	top: 282px;
 	left: 760px;
 }
-.bg_4 img{
+.bg_4{
 	top: 380px;
 	left: -60px;
 }
-.bg_5 img{
+.bg_5{
 	top: 460px;
 	left: 260px;
 }
-.bg_6 img{
+.bg_6{
 	top: 360px;
 	left: 630px;
 }
