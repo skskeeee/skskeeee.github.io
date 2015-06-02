@@ -181,6 +181,7 @@ header section{
 .content_2 iframe{
 	float: right;
 	margin: 50px 10% 0 0;
+	border: 0;
 }
 .cm_text{
 	width: 240px;
