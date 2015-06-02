@@ -210,9 +210,30 @@ header section{
 	left: 570px;
 }
 .image_6{
-	top: 1580px;
+	top: 580px;
 	left: 210px;
 }
+.image_7{
+	top: 850px;
+	left: 10px;
+}
+.image_8{
+	top: 800px;
+	left: 570px;
+}
+.image_9{
+	top: 1010px;
+	left: 200px;
+}
+.image_10{
+	top: 1430px;
+	left: 10px;
+}
+.image_11{
+	top: 1410px;
+	left: 540px;
+}
+
 
 
 .bg_1{
@@ -238,6 +259,27 @@ header section{
 .bg_6{
 	top: 360px;
 	left: 630px;
+}
+.bg_7{
+	top: 710px;
+	left: 50px;
+}
+.bg_8{
+	top: 1130px;
+	left: 50px;
+}
+.bg_9{
+	top: 1080px;
+	left: 670px;
+}
+
+
+
+.share{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 400;
 }
 
 @media (max-height:660px){
