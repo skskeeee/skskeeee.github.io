@@ -4,7 +4,6 @@ html{
 	margin:0; padding:0;
 	height: 100%;
 	width: 100%;
-	color:#777;
 }
 body {
 	height: 100%;
@@ -129,19 +128,26 @@ header section{
 	margin-right: 30px;
 }
 
+
+.page_content h3{
+	font-size: 30px;
+	font-weight: normal;
+}
 .content_1,.content_2,.content_3{
 	height: 360px;
 	background: #fff;
 	overflow: hidden;
+	padding: 0 13%;
 }
-.content_1 h3,.content_2 h3,.content_3 h3{
-	font-size: 30px;
-	font-weight: normal;
-}
-.content_1 p,.content_2 p{
+.content_1 p,.content_2 p,.content_1 img,.content_2 img{
 	font-size: 18px;
 	margin-top: 40px;
 }
+.content_1_text,.content_2_text{
+	width: 60%;
+	margin-top: 90px;
+}
+
 .content_1{
 	background-image: url(./image/page_bg_1.png);
 	background-repeat: no-repeat;
@@ -149,12 +155,9 @@ header section{
 }
 .content_1 img{
 	float: left;
-	margin: 40px 0 0 13%;
 }
 .content_1_text{
-	width: 430px;
 	float: right;
-	margin: 90px 13% 0 0;
 }
 .content_1_text h3{
 	color: #32c1fd;
@@ -171,27 +174,26 @@ header section{
 }
 .content_2 img{
 	float: right;
-	margin: 40px 13% 0 0;
 }
 .content_2_text{
-	width: 430px;
 	float: left;
-	margin: 90px 0 0 13%;
 }
 .content_2 iframe{
 	float: right;
-	margin: 50px 10% 0 0;
+	margin-top: 50px;
 	border: 0;
 }
 .cm_text{
 	width: 240px;
 }
 
+.content_3{
+	padding: 0;
+}
 .content_3 h3{
 	color: #32c1fd;
 	text-align: center;
-	padding-top: 50px;
-	margin-bottom: 20px;
+	margin: 50px 0 20px;
 }
 .content_3 ul{
 	width: 820px;
@@ -206,6 +208,7 @@ header section{
 
 .content_4{
 	height: 150px;
+	padding: 0 13%;
 }
 .content_4 ul{
 	width: 390px;
@@ -216,6 +219,24 @@ header section{
 	margin: 0 15px;
 }
 
+
+.hover_anime{
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.hover_anime:hover{
+	transform: translate(0,-10px);
+}
+
+
+
+.close{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 400;
+}
 .share{
 	position: fixed;
 	bottom: 10px;
@@ -237,10 +258,7 @@ header section{
 	.titlebar ul li{
 		margin-right: 20px;
 	}
-	.content_1_text,.content_2_text{
-		width: 360px;
-	}
-	.cm_text{
-		width: 240px;
+	.content_1,.content_2{
+		padding: 0 8%;
 	}
 }
