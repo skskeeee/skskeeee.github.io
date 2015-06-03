@@ -173,12 +173,12 @@ header section{
 	position: absolute;
 }
 .image_1 a:after{
-	content: "\30AC\30FC\30EB\30D5\30EC\30F3\30C9\FF08\4EEE\FF09";
-	width: 425px;
-	font-size: 18px;
-	text-align: center;
-	color: #fff;
-	line-height: 425px;
+	content: "";
+	background-image: url(./image/hover.png);
+	background-repeat: no-repeat;
+	width: 192px;
+	height: 122px;
+	margin: 150px 0 0 115px;
 	position: absolute;
 	z-index: 200;
 	opacity: 0;
